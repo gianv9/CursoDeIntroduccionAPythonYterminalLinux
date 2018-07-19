@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+# la línea que esta arriba le dice a la terminal:
+# "usa el interprete de python que esta ubicado en /usr/bin/python3".
+# si no les corre puede que tengan un nombre diferente de interprete
+# como: 'python', 'python2', 'python3'
+
+# importa un modulo para acceder a elementos del interprete (los argumentos en este caso)
+import sys
+
+# definimos la funcion principal del programa (un procedimiento).
+# recibe como parametro los argumentos del script
+def main(args):
+    # imprime cada uno de los argumentos
+    # nota: el primer elemento de sys.argv siempre es por defecto el nombre del archivo
+    # por eso se utiliza un slice para picar la lista
+    # quitando solo el primer elemento
+    for element in args[1::]:
+        print(element)
+
+# punto de entrada del programa (main)
+if __name__ == '__main__':
+    # guardo en una lista los argumentos del programa
+    args = sys.argv
+    # envio la lista a la funcion principal
+    main(args)
+
+
+# ejemplo de uso
+# ./script hola como estas tu?
+# Salida:
+# hola
+# como
+# estas
+# tu?
+
+# recordar que el archivo debe tener permisos de ejecución...
