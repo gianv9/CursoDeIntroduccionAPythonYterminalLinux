@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-# la línea que esta arriba le dice a la terminal:
-# "usa el interprete de python que esta ubicado en /usr/bin/python3".
-# si no les corre puede que tengan un nombre diferente de interprete
-# como: 'python', 'python2', 'python3'
+
 
 # importa un modulo para acceder a elementos del interprete (los argumentos en este caso)
 import sys
@@ -14,7 +11,7 @@ def main(args):
     # nota: el primer elemento de sys.argv siempre es por defecto el nombre del archivo
     # por eso se utiliza un slice para picar la lista
     # quitando solo el primer elemento
-    for element in args[1::]:
+    for element in args:
         print(element)
 
 # punto de entrada del programa (main)
