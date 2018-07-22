@@ -28,6 +28,7 @@ while jugando:
         if evento.type == pygame.QUIT: # si la tecla esc se presiona
             jugando = False # finaliza el bucle
     
+    # ver documentacion en --> https://www.pygame.org/docs/ref/key.html
     teclas = pygame.key.get_pressed()
 
     if teclas[pygame.K_UP]:
