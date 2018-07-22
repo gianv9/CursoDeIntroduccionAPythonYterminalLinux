@@ -13,6 +13,11 @@ ventana = {"juego": None, "alto": 500, "ancho": 500, "titulo": "Mi primer juego 
 # atributos del rectangulo
 R1 = {"x": 50, "y": 100, "ancho": 50, "alto": 60, "velocidad": 5}
 
+walkRight = [pygame.image.load('./recursos/R1.png'), pygame.image.load('./recursos/R2.png'), pygame.image.load('./recursos/R3.png'), pygame.image.load('./recursos/R4.png'), pygame.image.load('./recursos/R5.png'), pygame.image.load('./recursos/R6.png'), pygame.image.load('./recursos/R7.png'), pygame.image.load('./recursos/R8.png'), pygame.image.load('./recursos/R9.png')]
+walkLeft = [pygame.image.load('./recursos/L1.png'), pygame.image.load('./recursos/L2.png'), pygame.image.load('./recursos/L3.png'), pygame.image.load('./recursos/L4.png'), pygame.image.load('./recursos/L5.png'), pygame.image.load('./recursos/L6.png'), pygame.image.load('./recursos/L7.png'), pygame.image.load('./recursos/L8.png'), pygame.image.load('./recursos/L9.png')]
+bg = pygame.image.load('./recursos/bg.jpg')
+char = pygame.image.load('./recursos/standing.png')
+
 ventana["juego"] = pygame.display.set_mode(  (ventana["alto"], ventana["ancho"])  )
 pygame.display.set_caption( ventana["titulo"] )
 
